@@ -6,7 +6,7 @@
 #' @param data_engsoc  data frame obtained from {engsoccerdata}.
 #' @param country `character` scalar, specifies the league.
 #'
-#' @return a tibble with columns `country`, `date`, `season`, `tier`, `home`,
+#' @return a tibble with columns `country`, `tier`, `season`, `date`, `home`,
 #'    `visitor`, `goals_home`, `goals_visitor`.
 #' @export
 #'

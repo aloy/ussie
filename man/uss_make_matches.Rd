@@ -12,7 +12,7 @@ uss_make_matches(data_engsoc, country)
 \item{country}{\code{character} scalar, specifies the league.}
 }
 \value{
-a tibble with columns \code{country}, \code{date}, \code{season}, \code{tier}, \code{home},
+a tibble with columns \code{country}, \code{tier}, \code{season}, \code{date}, \code{home},
 \code{visitor}, \code{goals_home}, \code{goals_visitor}.
 }
 \description{
