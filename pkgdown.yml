@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   ussie: ussie.html
-last_built: 2022-07-25T20:18Z
+last_built: 2022-07-25T20:21Z
 urls:
   reference: https://aloy.github.io/ussie/reference
   article: https://aloy.github.io/ussie/articles
