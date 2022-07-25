@@ -4,4 +4,5 @@ test_that("uss_make_matches() is working", {
   expect_named(england, c("country", "tier", "season", "date", "home",
                           "visitor", "goals_home", "goals_visitor"))
   expect_identical(unique(england$country), "England")
+  expect_s3_class(england$tier, "factor")
 })
