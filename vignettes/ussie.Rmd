@@ -38,3 +38,22 @@ italy_matches <- uss_get_matches("italy")
 glimpse(italy_matches)
 ```
 
+## Filter by season
+
+The function `uss_get_matches()` can take logical statements passed to `dplyr::filter()`:
+
+```{r}
+italy_matches_1929 <- uss_get_matches("italy", season == 1929)
+glimpse(italy_matches)
+```
+
+## Accumulating seasons
+
+```{r}
+italy <- uss_get_matches("italy") |> uss_make_teams_matches()
+
+uss_make_seasons_cumulative(italy) |> glimpse()
+
+uss_make_seasons_final(italy) |> glimpse()
+```
+
