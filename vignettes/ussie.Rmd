@@ -28,3 +28,13 @@ matches_england <- uss_make_matches(engsoccerdata::england, "England")
 glimpse(matches_england)
 ```
 
+
+## Get country data
+
+The function `uss_get_matches()` can get the data for a specified country:
+
+```{r}
+italy_matches <- uss_get_matches("italy")
+glimpse(italy_matches)
+```
+
