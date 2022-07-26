@@ -13,6 +13,11 @@
 #' @examples
 #' uss_make_matches(engsoccerdata::england, "England")
 uss_make_matches <- function(data_engsoc, country) {
+
+  # Validate
+  validate_data_frame(data_engsoc)
+  validate_cols(data_engsoc, cols_req = cols_engsoc())
+
   result <-
     data_engsoc |>
     tibble::as_tibble() |>
